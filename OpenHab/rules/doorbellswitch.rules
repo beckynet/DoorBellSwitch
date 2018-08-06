@@ -1,0 +1,43 @@
+rule "DoorBell Push"
+when
+	Item Door_Bell_Push changed to ON
+then
+	// Sound
+	sendCommand(Gateway_SoundVolume, 80)
+	sendCommand(Gateway_Sound, 10003)
+
+	Gateway_Color.sendCommand("120,100,100") // GREEN
+	var i = 0
+	while((i=i+1) < 15) {
+	Thread::sleep(100)
+	Gateway_LightSwitch.sendCommand("ON")
+	Thread::sleep(100)
+	Gateway_LightSwitch.sendCommand("OFF")
+	}
+
+	Thread::sleep(12000) /* wait for 5 seconds */
+	sendCommand(Gateway_Sound, 10000)
+	sendCommand(Gateway_SoundVolume, 0)
+end
+
+rule "Door Open"
+when
+	Item Door_Open_Switch changed to ON
+then
+	// Sound
+	sendCommand(Gateway_SoundVolume, 80)
+	sendCommand(Gateway_Sound, 26) // 12, 20, 24, (26), 29
+
+	Gateway_Color.sendCommand("0,100,100") // RED
+	var i = 0
+	while((i=i+1) < 15) {
+	Thread::sleep(100)
+	Gateway_LightSwitch.sendCommand("ON")
+	Thread::sleep(100)
+	Gateway_LightSwitch.sendCommand("OFF")
+	}
+
+	Thread::sleep(7500) /* wait for 5 seconds */
+	sendCommand(Gateway_Sound, 10000)
+	sendCommand(Gateway_SoundVolume, 0)
+end

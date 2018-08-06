@@ -1,0 +1,8 @@
+Switch	DoorBellSwitch_Reachable	"Door Bell Reachable"																			<switch>			(FF_Entryway, gReachable)
+									{ mqtt="<[broker:doorbellswitch/reachable:state:MAP(reachable.map)]" }
+Number	DoorBellSwitch_RSSI			"Door Bell Reachable: RSSI [%d %%]"																<qualityofservice>	(FF_Entryway)
+									{ mqtt="<[broker:doorbellswitch/wifi/rssi/status:state:default]" }
+Switch	Door_Bell_Push				"Door Bell Push Switch"																			<switch>			(FF_Entryway)
+									{ mqtt="<[broker:doorbellswitch/door/1/status:state:default]" }
+Switch	Door_Open_Switch			"Door Open"																						<switch>			(FF_Entryway)
+									{ mqtt="<[broker:doorbellswitch/door/2/status:state:default]" }
