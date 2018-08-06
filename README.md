@@ -38,4 +38,14 @@ OpenHab items and Rules in text files. [Here](https://www.openhab.org/docs/)<BR>
 Arduino-Code : Code Arduino and config file for your own wifi and mosquitto parameter<BR>
 Fritzing : Download Fritzing [Here](http://fritzing.org/download/) to view connecting schema.<BR>
 OpenHab : Items, Rules, Transform Files<BR>
-Gerber : If you want to make a beautifull PCB. I'm not sponsorized but [this one](https://www.seeedstudio.io/fusion_pcb.html) is cheap. 
+Gerber : If you want to make a beautifull PCB. I'm not sponsorized but [this one](https://www.seeedstudio.io/fusion_pcb.html) is cheap.
+
+## PCB View Real Size 35 x 35 mm
+
+![alt text](https://raw.githubusercontent.com/beckynet/DoorBellSwitch/master/Pictures/PCB.PNG)
+
+## Fritzing View
+
+<b style='color:red'>Warning ! Use a HLK-PM03 it is 3.3V and not a HLK-PM01 it is 5V or your are going to burn your ESP-01 !</b>
+
+![alt text](https://raw.githubusercontent.com/beckynet/DoorBellSwitch/master/Pictures/Fritzing.PNG)
