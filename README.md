@@ -11,7 +11,7 @@ As I find that some products are shamefully expensive, and that the world of ele
 As in the past, I was interested in the world of arduino.
 I discovered ESP8266 modules.
 They are not expensive, they are not bulky, they do not consume much and can work with arduino code that I already knew.
-And Sherry On The Cake, they can speak the "MOSQUITTO" thanks to the MQTT protocol that OpenHab also knows.
+And Cherry On The Cake, they can speak the "MOSQUITTO" thanks to the MQTT protocol that OpenHab also knows.
 
 ## Destination of this project
 
